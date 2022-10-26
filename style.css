@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 242, 240);
+    
+}
+
+/* Styling the navbar. Desktop */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+
+.brand-title {
+    text-decoration: none;
+    font-family: "Metal Mania";
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: white;
+}
+
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+/* Making the Navbar responsive */
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Styling Image  */
+
+.img-container {
+    background-color: black;
+}
+
+.img-container {
+    background-image: url("images/vegetable-jalfrezi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .9);
+    background-blend-mode: multiply;
+    background-position: center;
+    /* height: 500px; */
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    background-color: rgba(209, 20, 36);
+    border-radius: 60px;
+    /* font-size: 1.5em; */
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(196, 18, 33, 0.842);
+
+}
+
+.header-content {
+    padding-top: 200px;
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-title-large {
+    
+    font-size: 4rem;
+}
+
+.catch-phrase {
+    color: white;
+    font-size: large;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+}
+
+.content-container {
+    margin: 0 5%;
+    margin-top: 1rem;
+
+}
+
+.content-header {
+    display: inline;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+
+    
+}
+
+.report a {
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem;
+    
+}
+
+.report a:hover {
+    background-color: #555;
+}
+
+.content-quote {
+    color: rgba(255,255, 255, 0.8);
+    text-align: center;
+    font-size: 2.5rem;
+    background-image: url("test-imgs/sharon-pittaway-unsplash.jpg");
+    padding-top: 3rem;  
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: multiply;
+}
+
+
+
+.opening-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.times {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.closed {
+    display: flex;
+    justify-content: center;
+}
+
+.lunch, .dinner {
+    text-align: center;
+}
+
+.lunch h4, .dinner h4 {
+    font-size: 1.5rem;
+}
+
+.meal-time {
+    font-weight: bold;
+}
+
+.closed {
+    text-align: center;
+}
+
+.visit-us {
+    color: rgba(255,255, 255, 0.8);
+    text-align: center;
+    font-size: 2.5rem;
+    background-image: url("test-imgs/henry-perks-unsplash.jpg");
+    padding-top: 4rem;  
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: multiply;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.top-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.top-banner p {
+    width: fit-content;
+    margin-bottom: 0;
+
+}
+.top-banner p:nth-last-child(1) {
+    margin-bottom: 1rem;
+}
+
+.address.lunch-page{
+    margin-top: 1rem;
+    /* border-top: 2px solid black; */
+}
+
+.address.lunch-page p{
+    margin-bottom: 0;
+}
+
+.address.lunch-page h3 {
+    margin-bottom: 0;
+}
+
+.menu-section {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.menu-section ul {
+    padding-left:0;
+    list-style: none;
+}
+
+.menu-section_header {
+    text-align: center;
+}
+
+.menu-section_header h2 {
+    font-family:"MuseoModerno";
+    font-size:2.5rem;
+    font-weight:900;
+}
+
+.menu-item_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-item_container > * {
+    flex: 1 1 33%;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item_heading {
+    font-family:"MuseoModerno";
+    font-size:1.25rem;
+    font-weight:700;
+    text-transform:uppercase;
+    line-height:1.7;
+    margin-bottom:0
+}
+
+.menu-item_details {
+    font-family:"MuseoModerno";
+    font-weight: 300;
+
+}
+
+.main-section_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-section_content li {
+    list-style: none;
+
+}
+
+.main-section_content li:hover {
+    display: inline;
+    background-color: #555;
+}
+
+/* Gallery Styling */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+
+.gallery img {
+    width: 100%;
+    height: 150px; 
+    padding: 10px;
+  
+    border: 1px solid #ddd;
+    background: #fff;
+
+    object-fit: contain;
+    position: relative;
+  }
+  
+.gallery img:hover {
+    z-index: 9;
+    transform: scale(1.3);
+    
+    transition: transform ease 0.5s;
+  }
+  
+.gallery-header {
+    display: flex;
+    justify-content: center;
+
+  }
+
+.gallery-head {
+    font-size: 2.5rem;
+    
+}
+
+.cart-btn:hover {
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+
+}
+
+.add-booking {
+    float: right;
+    color: white;
+    background-color: rgb(29, 28, 28);
+    border-radius: 5px;
+    /* font-size: 1.2rem; */
+    font-weight: lighter;
+
+}
+
+.add-booking:hover {
+    background-color: #555;
+}
+
+.book-form {
+    margin: 0 3rem;
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.book-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 2.5rem;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.invisible {
+    display: none;
+}
+
+.attribution {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.attribution a:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.send-order {
+    float: right;
+    color: white;
+    background-color: rgb(209, 20, 36);
+    border-radius: 5px;
+    /* font-size: 1.2rem; */
+    font-weight: lighter;
+    border: none;
+
+}
+
+.send-order:hover {
+    background-color: #ffe32c;
+    color:black
+}
+
+.order-price {
+    /* border: 1px solid red; */
+    /* margin: 10rem 0; */
+    padding: 1rem 1rem;
+}
+
+.error-message-container {
+    /* border: 1px solid red; */
+    text-align: center;
+    color: red;
+}
+
+
+@media (max-width: 900px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .brand-title {
+        padding-top: 10px; 
+        padding-bottom: 5px; 
+    }
+
+    .brand-title-large {
+        font-size: 2rem;
+    }
+
+    .catch-phrase {
+        font-size: 0.9rem;
+        padding-bottom: 2rem;   
+    }
+
+    .student-id {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+    .menu-item_container > * {
+        flex: 1 1 50%;
+    }
+}
+
